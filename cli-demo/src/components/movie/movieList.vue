@@ -1,16 +1,16 @@
 <template>
   <div class="movieList">
-    <img class="movieHead" src="../../assets/logo.png" alt="">
+    <img class="movieHead" :src="`${picUrl}`" alt="">
     <div class="movieBody">
       <p class="name">{{title}}</p>
-      <p class="desc"><span v-for="(t,i) in type" :key=i >{{t}}</span> {{year}} {{avg}}</p>
+      <p class="desc"><span v-for="(t,i) in genres" :key=i >{{t}}|</span> {{year}} {{average}}</p>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
-  props: ["title", "type", "year", "avg"]
+  props: ["title", "genres", "year", "average", "picUrl"]
 };
 </script>
 

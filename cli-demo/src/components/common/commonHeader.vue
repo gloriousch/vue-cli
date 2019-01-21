@@ -1,7 +1,8 @@
 <template>
-  <div class="commonHeader" :style="{backgroundColor:bgClr}">
+  <div class="commonHeader" :bigTitle="bigTitle" :style="{backgroundColor:bgClr}">
 		<div class="btn">首页</div>
-		<h2>movie</h2>
+		<!-- <h2>{{bigTitle}}</h2> -->
+    <h2>movie</h2>
   </div>
 </template>
 
@@ -10,8 +11,16 @@ export default {
   name: "commonHeader",
   props: ["bgClr"],
   data() {
-    return {};
+    return {
+      // bigTitle: ""
+    };
   }
+  // methods: {
+  //   childByValue: function(childValue) {
+  //     // childValue就是子组件传过来的值
+  //     this.name = childValue;
+  //   }
+  // }
 };
 </script>
 
