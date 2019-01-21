@@ -14,9 +14,19 @@ export default {
   components: {
     commonHeader,
     commonFooter
-  }
+  },
+  data: {}
 };
 </script>
 
-<style scoped>
+<style>
+/* .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+a {
+  color: #fff;
+  outline: none;
+}
 </style>

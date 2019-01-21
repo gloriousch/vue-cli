@@ -1,5 +1,5 @@
 <template>
-  <div class="commonHeader">
+  <div class="commonHeader" :style="{backgroundColor:bgClr}">
 		<div class="btn">首页</div>
 		<h2>movie</h2>
   </div>
@@ -8,6 +8,7 @@
 <script>
 export default {
   name: "commonHeader",
+  props: ["bgClr"],
   data() {
     return {};
   }
@@ -22,8 +23,6 @@ export default {
   line-height: 0.7rem;
   background-color: lightblue;
   display: flex;
-  position: fixed;
-  top: 0;
 }
 .commonHeader .btn {
   float: left;

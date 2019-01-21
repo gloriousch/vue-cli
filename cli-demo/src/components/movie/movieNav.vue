@@ -1,9 +1,9 @@
 <template>
     <div class="movieNav">
         <ul class="movieNavs">
-            <li>近期热映</li>
-            <li>即将上演</li>
-            <li>top25</li>
+            <li><router-link to="">近期热映</router-link></li>
+            <li><router-link to="">即将上演</router-link></li>
+            <li><router-link to="">top25</router-link></li>
         </ul>
     </div>
 </template>
@@ -19,8 +19,6 @@ export default {};
   line-height: 0.7rem;
   background-color: lightblue;
   display: flex;
-  position: fixed;
-  top: 0.7rem;
 }
 .movieNavs li {
   flex: 1;
