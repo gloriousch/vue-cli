@@ -32,14 +32,17 @@ export default {
 </script>
 
 <style scoped>
+.commonfooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 .footerTabs {
   width: 100%;
   height: 0.7rem;
   line-height: 0.7rem;
   background-color: lightsalmon;
   display: flex;
-  position: fixed;
-  bottom: 0;
 }
 .footerTabs li {
   flex: 1;

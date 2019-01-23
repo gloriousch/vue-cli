@@ -32,6 +32,8 @@ export default {
   line-height: 0.7rem;
   background-color: lightblue;
   display: flex;
+  position: fixed;
+  top: 0;
 }
 .commonHeader .btn {
   float: left;

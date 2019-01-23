@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Movie from '@/components/movie/movie'
+import movieDetail from '@/components/movie/movieDetail'
 import Music from '@/components/music/music'
 import Photo from '@/components/photo/photo'
 import Mine from '@/components/mine/mine'
@@ -26,6 +27,11 @@ export default new Router({
       path: '/mine',
       name: 'mine',
       component: Mine
+    },
+    {
+      path: '/movieDetail',
+      name: 'movieDetail',
+      component: movieDetail
     }
   ]
 })

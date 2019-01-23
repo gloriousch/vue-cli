@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <commonHeader></commonHeader>
-    <router-view/>
+    <div class="content">
+      <router-view/>      
+    </div>
     <commonFooter></commonFooter>
   </div>
 </template>
@@ -25,8 +27,16 @@ export default {
   display: block;
   clear: both;
 } */
+html,
+body {
+  height: 100%;
+}
 a {
   color: #fff;
   outline: none;
+}
+.content {
+  margin: 0.7rem 0;
+  height: 100%;
 }
 </style>

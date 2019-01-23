@@ -1,5 +1,5 @@
 <template>
-  <div class="movieList">
+  <div class="movieList clearfix">
     <img class="movieHead" :src="`${picUrl}`" alt="">
     <div class="movieBody">
       <p class="name">{{title}}</p>
@@ -45,5 +45,10 @@ export default {
   vertical-align: middle;
   line-height: 0.2rem;
   white-space: nowrap; */
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 </style>
