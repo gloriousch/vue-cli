@@ -1,6 +1,6 @@
 <template>
   <div class="commonHeader" :bigTitle="bigTitle" :style="{backgroundColor:bgClr}">
-		<div class="btn">首页</div>
+		<div class="btn"><router-link to="/">首页</router-link></div>
 		<!-- <h2>{{bigTitle}}</h2> -->
     <h2>movie</h2>
   </div>
