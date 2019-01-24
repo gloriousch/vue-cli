@@ -1,6 +1,6 @@
 <template>
   <div class="movieDetail">
-asfggxg
+    {{$route.params.id}}
   </div>
 </template>
 

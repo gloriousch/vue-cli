@@ -29,7 +29,7 @@ export default new Router({
       component: Mine
     },
     {
-      path: '/movieDetail',
+      path: '/movieDetail/:id',
       name: 'movieDetail',
       component: movieDetail
     }
